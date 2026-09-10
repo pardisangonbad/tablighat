@@ -4,9 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>پردیسان | تبلیغات محیطی</title>
-  <meta name="description" content="خدمات تبلیغات محیطی پردیسان: تلویزیون شهری، استند تبلیغاتی و بیلبورد در پرترددترین نقاط شهر" />
-  <!-- آدرس لوگو ممکنه بعداً منقضی بشه؛ در اون صورت فایل لوگوی خودت رو جایگزین کن -->
-  <link rel="icon" href="./media/logo.webp" />
+  <meta name="description" content="خدمات تبلیغات محیطی پردیسان: تلویزیون شهری، استند تبلیغاتی و بیلبورد پمپ بنزین در پرترددترین نقاط شهر" />
+  <link rel="icon" href="https://z-cdn-media.chatglm.cn/files/958f8ed3-fe2c-41bc-8f11-41b59d71db12.JPG?auth_key=1889030475-e28c03a0e34b48eb8f5c76b9283f1fbc-0-8f8aa2d2e2c81a0ef8da5098bad74bb4" />
 
   <!-- فونت فارسی وزیرمتن -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -44,7 +43,6 @@
         radial-gradient(900px 650px at -12% 108%, #0c2a58 0%, transparent 55%),
         linear-gradient(180deg,#050e22 0%,#081c3c 55%,#050e22 100%);
     }
-    /* حباب‌های نورانیِ مایع پشت شیشه‌ها */
     .orb{position:fixed;z-index:-1;border-radius:50%;pointer-events:none}
     .orb-1{width:62vmax;height:62vmax;top:-24vmax;right:-18vmax;
       background:radial-gradient(circle, rgba(72,170,255,.25) 0%, rgba(72,170,255,0) 65%);
@@ -69,7 +67,6 @@
                  inset 0 1px 0 rgba(255,255,255,.18),
                  inset 0 -1px 0 rgba(255,255,255,.05);
     }
-    /* هاله‌ی نور که همراه موس روی شیشه حرکت می‌کنه */
     .glass::before{
       content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;
       background:radial-gradient(480px circle at var(--x,50%) var(--y,-30%), rgba(130,205,255,.14), transparent 45%);
@@ -83,7 +80,7 @@
     section{scroll-margin-top:90px}
     .card{padding:clamp(24px,4.5vw,46px)}
 
-    /* ═══════════ نوار بالای صفحه ═══════════ */
+    /* ═══════════ نوار بالا ═══════════ */
     .nav{
       position:sticky;top:14px;z-index:50;
       display:flex;align-items:center;justify-content:space-between;gap:12px;
@@ -123,18 +120,21 @@
     .grad{background:linear-gradient(90deg,#9fe4ff,#4fb8ff 60%,#7fd0ff);
       -webkit-background-clip:text;background-clip:text;
       -webkit-text-fill-color:transparent;color:transparent}
-    .lead{color:var(--muted);max-width:620px;font-size:clamp(.95rem,2vw,1.08rem);margin-bottom:32px}
+    .lead{color:var(--muted);max-width:640px;font-size:clamp(.95rem,2vw,1.08rem);margin-bottom:32px}
     .cta-row{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-bottom:38px}
-    .btn{display:inline-flex;align-items:center;gap:9px;padding:12px 28px;border-radius:999px;
-      font-family:inherit;font-size:.98rem;font-weight:700;text-decoration:none;cursor:pointer;
-      transition:transform .25s, box-shadow .25s, background .25s}
-    .btn svg{width:16px;height:16px}
+    .btn{display:inline-flex;align-items:center;gap:9px;padding:12px 26px;border-radius:999px;
+      font-family:inherit;font-size:.95rem;font-weight:700;text-decoration:none;cursor:pointer;
+      transition:transform .25s, box-shadow .25s, background .25s, border-color .25s}
+    .btn svg{width:16px;height:16px;flex-shrink:0}
     .btn-primary{background:linear-gradient(135deg,#41b6ff 0%,#1f7ae2 100%);color:#fff;
       box-shadow:0 12px 30px rgba(45,150,255,.38), inset 0 1px 0 rgba(255,255,255,.35)}
     .btn-primary:hover{transform:translateY(-3px);box-shadow:0 18px 42px rgba(45,150,255,.5), inset 0 1px 0 rgba(255,255,255,.35)}
     .btn-glass{color:var(--ink);background:rgba(255,255,255,.07);border:1px solid var(--stroke);
       backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
     .btn-glass:hover{transform:translateY(-3px);background:rgba(255,255,255,.12)}
+    .btn-wa svg{color:#3ee07f}
+    .btn-wa:hover{background:rgba(37,211,102,.14);border-color:rgba(37,211,102,.45)}
+    .btn-ig:hover{background:rgba(238,42,123,.14);border-color:rgba(238,42,123,.45)}
     .stats{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
     .stat{padding:12px 22px;border-radius:18px;font-size:.85rem;color:var(--muted);
       background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);
@@ -157,7 +157,7 @@
       background:linear-gradient(90deg,transparent,rgba(150,205,255,.25),transparent)}
 
     /* ویژگی‌ها */
-    .feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+    .feats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
     .feat{display:flex;align-items:center;gap:12px;padding:13px 18px;border-radius:16px;
       background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);
       transition:transform .25s, background .25s}
@@ -179,32 +179,85 @@
       color:#c9ecff;font-size:.88rem}
     .loc svg{width:15px;height:15px;color:#6fd2ff;flex-shrink:0}
 
-    /* ═══════════ جای ویدیو / عکس ═══════════ */
+    /* ═══════════ جعبه رسانه — همه یک سایز ═══════════ */
     .media-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
     @media(max-width:640px){.media-grid{grid-template-columns:1fr}}
     .media{display:flex;flex-direction:column}
     .cap{margin-top:10px;text-align:center;color:var(--muted);font-size:.83rem}
     .cap b{color:var(--ink);font-weight:600}
-    /* استایل ویدیو/عکس واقعی که بعداً اضافه می‌کنی */
-    .media-el{width:100%;display:block;border-radius:20px;border:1px solid var(--stroke-strong);
+    .media-box{position:relative;aspect-ratio:16/9;border-radius:20px;overflow:hidden;
+      cursor:zoom-in;border:1px solid var(--stroke-strong);
+      background:linear-gradient(145deg,#0d2a5e,#081c40);
       box-shadow:0 16px 40px rgba(2,10,32,.45)}
-    /* کادر جای‌خالی */
-    .ph{border-radius:20px;display:flex;flex-direction:column;align-items:center;justify-content:center;
-      gap:8px;border:1.5px dashed rgba(150,205,255,.38);
-      background:radial-gradient(420px 200px at 50% 0%, rgba(110,195,255,.10), transparent 70%), rgba(255,255,255,.03);
-      color:#8fb9e4;transition:border-color .3s, color .3s, transform .3s;cursor:default}
-    .ph:hover{border-color:rgba(150,220,255,.65);color:#c9ecff;transform:translateY(-3px)}
-    .ph svg{width:44px;height:44px;opacity:.85}
-    .ph-t{font-size:.95rem;font-weight:700}
-    .ph-s{font-size:.76rem;opacity:.75;line-height:1.7;text-align:center;padding:0 16px}
-    .ph-video{aspect-ratio:16/9}
-    .ph-pic{aspect-ratio:4/3}
+    .media-box img,.media-box video{width:100%;height:100%;object-fit:cover;display:block;
+      transition:transform .6s ease}
+    .media-box:hover img,.media-box:hover video{transform:scale(1.06)}
+    .media-box:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+    .mb-hint{position:absolute;inset:0;display:grid;place-items:center;pointer-events:none}
+    .mb-hint>span{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;color:#fff;
+      background:rgba(8,26,58,.55);border:1px solid rgba(150,205,255,.45);
+      backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+      box-shadow:0 10px 30px rgba(2,10,32,.5), inset 0 1px 0 rgba(255,255,255,.25);
+      opacity:0;transform:scale(.7);transition:opacity .35s, transform .35s}
+    .mb-hint svg{width:22px;height:22px}
+    .media-box:hover .mb-hint>span{opacity:1;transform:scale(1)}
+    .media-box.video .mb-hint>span{opacity:.95;transform:scale(1)}
 
-    /* ═══════════ دعوت به اقدام + فوتر ═══════════ */
+    /* ═══════════ لایت‌باکس (نمایش شناور بزرگ) ═══════════ */
+    .lightbox{position:fixed;inset:0;z-index:200;display:grid;place-items:center;padding:22px;
+      background:rgba(4,10,26,.74);
+      backdrop-filter:blur(16px) saturate(140%);-webkit-backdrop-filter:blur(16px) saturate(140%);
+      opacity:0;pointer-events:none;transition:opacity .35s}
+    .lightbox.open{opacity:1;pointer-events:auto}
+    .lb-body{position:relative;max-width:min(1000px,94vw);width:100%;
+      display:flex;flex-direction:column;align-items:center;gap:12px;
+      transform:translateY(26px) scale(.95);transition:transform .4s cubic-bezier(.2,.8,.2,1)}
+    .lightbox.open .lb-body{transform:none}
+    .lb-media{width:100%;display:grid;place-items:center;position:relative}
+    .lb-media img,.lb-media video{width:100%;max-height:76vh;object-fit:contain;border-radius:18px;
+      border:1px solid var(--stroke-strong);background:rgba(6,16,38,.65);
+      box-shadow:0 30px 90px rgba(0,0,0,.55), inset 0 1px 0 rgba(255,255,255,.12)}
+    .lb-cap{color:var(--muted);font-size:.92rem;text-align:center}
+    .lb-close{position:absolute;top:12px;right:12px;z-index:3;width:44px;height:44px;border-radius:50%;
+      display:grid;place-items:center;cursor:pointer;color:#fff;border:1px solid rgba(150,205,255,.45);
+      background:rgba(8,26,58,.6);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+      box-shadow:0 8px 24px rgba(2,10,32,.5);transition:transform .25s, background .25s;
+      font-family:inherit}
+    .lb-close:hover{transform:rotate(90deg) scale(1.08);background:rgba(20,60,130,.7)}
+    .lb-close svg{width:18px;height:18px}
+
+    /* ═══════════ دکمه‌های شناور واتساپ / اینستاگرام ═══════════ */
+    .fabs{position:fixed;bottom:22px;right:22px;z-index:150;
+      display:flex;flex-direction:column;gap:12px;transition:opacity .3s}
+    body.lb-open .fabs{opacity:0;pointer-events:none}
+    .fab{position:relative;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;
+      color:#3ee07f;background:rgba(255,255,255,.08);border:1px solid var(--stroke);
+      backdrop-filter:blur(14px) saturate(150%);-webkit-backdrop-filter:blur(14px) saturate(150%);
+      box-shadow:0 12px 32px rgba(2,10,32,.5), inset 0 1px 0 rgba(255,255,255,.2);
+      transition:transform .3s, box-shadow .3s, background .3s, border-color .3s}
+    .fab svg{width:25px;height:25px}
+    .fab:hover{transform:translateY(-4px) scale(1.06)}
+    .fab-wa:hover{background:rgba(37,211,102,.18);border-color:rgba(37,211,102,.5);
+      box-shadow:0 16px 38px rgba(37,211,102,.35), inset 0 1px 0 rgba(255,255,255,.25)}
+    .fab-ig{color:#ee2a7b}
+    .fab-ig:hover{background:rgba(238,42,123,.16);border-color:rgba(238,42,123,.5);
+      box-shadow:0 16px 38px rgba(238,42,123,.32), inset 0 1px 0 rgba(255,255,255,.25)}
+    .fab-tip{position:absolute;inset-inline-end:calc(100% + 12px);top:50%;
+      transform:translateY(-50%) translateX(10px);white-space:nowrap;
+      font-size:.78rem;font-weight:600;color:var(--ink);
+      background:rgba(10,26,58,.85);border:1px solid var(--stroke);
+      padding:6px 14px;border-radius:999px;
+      backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+      opacity:0;pointer-events:none;transition:opacity .3s, transform .3s}
+    .fab:hover .fab-tip{opacity:1;transform:translateY(-50%) translateX(0)}
+    @media(max-width:560px){.fab-tip{display:none}}
+
+    /* ═══════════ CTA و فوتر ═══════════ */
     .cta-box{padding:clamp(28px,5vw,52px);text-align:center;
       display:flex;flex-direction:column;align-items:center;gap:8px}
+    .cta-box .cta-row{margin-bottom:0;margin-top:10px}
     .cta-box h3{font-size:clamp(1.25rem,3vw,1.7rem);font-weight:800}
-    .cta-box p{color:var(--muted);max-width:480px;margin-bottom:10px;font-size:.95rem}
+    .cta-box p{color:var(--muted);max-width:480px;font-size:.95rem}
     footer{padding:6px 0 30px}
     .foot{padding:26px 28px;border-radius:26px;display:flex;flex-direction:column;
       align-items:center;gap:6px;text-align:center}
@@ -232,6 +285,41 @@
 </head>
 <body>
 
+  <!-- آیکون‌ها یک‌بار تعریف می‌شوند تا صفحه سبک بماند -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="igGrad" x1="0" y1="1" x2="1" y2="0">
+        <stop offset="0" stop-color="#f9ce34"/>
+        <stop offset=".45" stop-color="#ee2a7b"/>
+        <stop offset="1" stop-color="#6228d7"/>
+      </linearGradient>
+
+      <symbol id="ico-tick" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M20 6L9 17l-5-5"/></symbol>
+
+      <symbol id="ico-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.4-7-11a7 7 0 1 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></g></symbol>
+
+      <symbol id="ico-tv" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="2.5"/><path d="M8 21h8M12 17.5V21"/></g></symbol>
+
+      <symbol id="ico-stand" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="3" width="15" height="10.5" rx="1.5"/><path d="M7 13.5 5 21M17 13.5 19 21M12 13.5V21"/></g></symbol>
+
+      <symbol id="ico-fuel" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 22h12"/><path d="M4 9h10"/><path d="M14 22V4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v18"/><path d="M14 13h2a2 2 0 0 1 2 2v2a2 2 0 0 0 2 2 2 2 0 0 0 2-2V9.8a2 2 0 0 0-.6-1.4L18 5"/></g></symbol>
+
+      <symbol id="ico-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></symbol>
+
+      <symbol id="ico-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M5 12l7-7 7 7"/></symbol>
+
+      <symbol id="ico-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></symbol>
+
+      <symbol id="ico-ig" viewBox="0 0 24 24"><g fill="none" stroke="url(#igGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.4"/><circle cx="17.4" cy="6.6" r="1.2" fill="url(#igGrad)" stroke="none"/></g></symbol>
+
+      <symbol id="ico-play" viewBox="0 0 24 24"><path fill="currentColor" d="M8 5.3v13.4c0 .8.9 1.3 1.6.9l10.2-6.7c.6-.4.6-1.4 0-1.8L9.6 4.4c-.7-.4-1.6.1-1.6.9z"/></symbol>
+
+      <symbol id="ico-expand" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7.5 7.5M3 21l7.5-7.5"/></g></symbol>
+
+      <symbol id="ico-x" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" d="M18 6 6 18M6 6l12 12"/></symbol>
+    </defs>
+  </svg>
+
   <!-- حباب‌های نورانی پس‌زمینه -->
   <div class="orb orb-1"></div>
   <div class="orb orb-2"></div>
@@ -242,7 +330,6 @@
     <!-- ═══════════════ نوار بالای صفحه ═══════════════ -->
     <nav class="nav glass" aria-label="منوی اصلی">
       <a class="brand" href="#top">
-        <!-- ⚠️ اگر لوگو نمایش داده نشد، src را با فایل لوگوی خودت (مثلاً logo.jpg) عوض کن -->
         <img src="./media/logo.webp" alt="لوگوی پردیسان" onerror="this.style.display='none'">
         <span><b>پردیسان</b><small>تبلیغات محیطی</small></span>
       </a>
@@ -262,17 +349,24 @@
       <span class="badge reveal" style="transition-delay:.1s"><span class="dot"></span>تبلیغات محیطی پردیسان</span>
       <h1 class="reveal" style="transition-delay:.18s">برند شما، <span class="grad">در قلب شهر</span> دیده می‌شود</h1>
       <p class="lead reveal" style="transition-delay:.26s">
-        از تلویزیون‌های شهری تا استند و بیلبورد؛ پیام برندتان را در پرترددترین نقاط شهر، به هزاران مخاطب برسانید.
+        از تلویزیون‌های شهری تا استند و بیلبورد پمپ بنزین؛ پیام برندتان را در پرترددترین نقاط شهر، به هزاران مخاطب برسانید.
       </p>
       <div class="cta-row reveal" style="transition-delay:.34s">
         <a class="btn btn-primary" href="#tv">
           مشاهده خدمات
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7-7 7 7"/></svg>
+          <svg><use href="#ico-arrow"/></svg>
         </a>
-        <!-- ⚠️ شماره تماس واقعی را در href و متن دکمه جایگزین کن -->
-        <a class="btn btn-glass" href="tel:09120000000">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>
+        <a class="btn btn-glass" href="tel:09351784042">
+          <svg><use href="#ico-phone"/></svg>
           تماس با ما
+        </a>
+        <a class="btn btn-glass btn-wa" href="https://wa.me/989351784042" target="_blank" rel="noopener">
+          <svg><use href="#ico-wa"/></svg>
+          واتساپ
+        </a>
+        <a class="btn btn-glass btn-ig" href="https://instagram.com/pardisan.ads" target="_blank" rel="noopener">
+          <svg><use href="#ico-ig"/></svg>
+          اینستاگرام
         </a>
       </div>
       <div class="stats reveal" style="transition-delay:.42s">
@@ -288,9 +382,7 @@
       <section id="tv" class="reveal">
         <article class="glass card">
           <div class="sec-head">
-            <span class="sec-ico">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="2.5"/><path d="M8 21h8M12 17.5V21"/></svg>
-            </span>
+            <span class="sec-ico"><svg><use href="#ico-tv"/></svg></span>
             <div>
               <h2>تلویزیون‌های شهری</h2>
               <div class="sec-sub">تیزر شما روی صفحات دیجیتال قلب شهر</div>
@@ -301,64 +393,39 @@
           <hr class="divider">
 
           <div class="feats">
-            <div class="feat"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><span>تردد هزاران خودرو و عابر پیاده</span></div>
-            <div class="feat"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><span>پخش از ساعت ۶:۳۰ صبح الی ۱ بامداد</span></div>
-            <div class="feat"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><span>تعویض تیزرها به‌صورت نامحدود</span></div>
-            <div class="feat"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><span>با سبک‌های مختلف، برند شما دیده می‌شود</span></div>
+            <div class="feat"><span class="tick"><svg><use href="#ico-tick"/></svg></span><span>تردد هزاران خودرو و عابر پیاده</span></div>
+            <div class="feat"><span class="tick"><svg><use href="#ico-tick"/></svg></span><span>پخش از ساعت ۶:۳۰ صبح الی ۱ بامداد</span></div>
+            <div class="feat"><span class="tick"><svg><use href="#ico-tick"/></svg></span><span>تعویض تیزرها به‌صورت نامحدود</span></div>
+            <div class="feat"><span class="tick"><svg><use href="#ico-tick"/></svg></span><span>با سبک‌های مختلف، برند شما دیده می‌شود</span></div>
           </div>
 
           <div class="loc-label">موقعیت‌های استراتژیک</div>
           <div class="locs">
-            <div class="loc">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.4-7-11a7 7 0 1 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
-              میدان مرکزی — قلب شهر
-            </div>
-            <div class="loc">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.4-7-11a7 7 0 1 1 14 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
-              تقاطع بلوار دانشجو — پشت ۲ چراغ قرمز، روبروی سیتی سنتر
-            </div>
+            <div class="loc"><svg><use href="#ico-pin"/></svg>میدان مرکزی — قلب شهر</div>
+            <div class="loc"><svg><use href="#ico-pin"/></svg>تقاطع بلوار دانشجو — پشت ۲ چراغ قرمز، روبروی سیتی سنتر</div>
           </div>
 
           <hr class="divider">
 
           <div class="media-grid">
 
-            <!-- ══════════════════════════════════════════════════
-                 🎬 ویدیوی اول — تلویزیون شهری
-                 برای قرار دادن ویدیو، کادر «جای ویدیو» را پاک کن و به‌جایش بنویس:
-
-                 <video class="media-el" controls playsinline>
-                   <source src="video-1.mp4" type="video/mp4">
-                 </video>
-
-                 و به‌جای video-1.mp4 آدرس فایل ویدیوی خودت را بگذار.
-                 ══════════════════════════════════════════════════ -->
             <div class="media">
-              <div class="ph ph-video">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2.5"/><path d="M10 8.5v5l4.5-2.5z" fill="currentColor" stroke="none"/><path d="M8.5 21h7" stroke-linecap="round"/></svg>
-                <video class="media-el" controls playsinline>
-                   <source src="./media/tv1.mp4" type="video/mp4">
-                 </video>
+              <!-- ⬇️ آدرس ویدیوی «تقاطع بلوار دانشجو» را جای video-1.mp4 بگذار
+                   (می‌توانی poster="آدرس-عکس.jpg" هم برای پیش‌نمایش اضافه کنی) -->
+              <div class="media-box video" role="button" tabindex="0" aria-label="نمایش بزرگ تیزر تقاطع بلوار دانشجو">
+                <video src="./media/tv1.mp4" muted playsinline preload="metadata"></video>
+                <span class="mb-hint"><span><svg><use href="#ico-play"/></svg></span></span>
               </div>
-              <p class="cap"><b>تیزر ۱</b> — میدان مرکزی</p>
+              <p class="cap"><b>تیزر ۱</b> — تقاطع بلوار دانشجو</p>
             </div>
 
-            <!-- ══════════════════════════════════════════════════
-                 🎬 ویدیوی دوم — تلویزیون شهری
-                 برای قرار دادن ویدیو، کادر «جای ویدیو» را پاک کن و به‌جایش بنویس:
-
-                 <video class="media-el" controls playsinline>
-                   <source src="video-2.mp4" type="video/mp4">
-                 </video>
-                 ══════════════════════════════════════════════════ -->
             <div class="media">
-              <div class="ph ph-video">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2.5"/><path d="M10 8.5v5l4.5-2.5z" fill="currentColor" stroke="none"/><path d="M8.5 21h7" stroke-linecap="round"/></svg>
-                <video class="media-el" controls playsinline>
-                   <source src="./meida/tv2.mp4" type="video/mp4">
-                 </video>
+              <!-- ⬇️ آدرس ویدیوی «میدان مرکزی» را جای video-2.mp4 بگذار -->
+              <div class="media-box video" role="button" tabindex="0" aria-label="نمایش بزرگ تیزر میدان مرکزی">
+                <video src="./media/tv2.mp4" muted playsinline preload="metadata"></video>
+                <span class="mb-hint"><span><svg><use href="#ico-play"/></svg></span></span>
               </div>
-              <p class="cap"><b>تیزر ۲</b> — تقاطع بلوار دانشجو</p>
+              <p class="cap"><b>تیزر ۲</b> — میدان مرکزی</p>
             </div>
 
           </div>
@@ -369,9 +436,7 @@
       <section id="stand" class="reveal">
         <article class="glass card">
           <div class="sec-head">
-            <span class="sec-ico">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="3" width="15" height="10.5" rx="1.5"/><path d="M7 13.5 5 21M17 13.5 19 21M12 13.5V21"/></svg>
-            </span>
+            <span class="sec-ico"><svg><use href="#ico-stand"/></svg></span>
             <div>
               <h2>استند تبلیغاتی</h2>
               <div class="sec-sub">پیام شما، جلوی چشم مخاطب</div>
@@ -382,43 +447,32 @@
           <hr class="divider">
 
           <div class="feats">
-            <div class="feat"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><span>قرارگیری در مسیرهای پرتردد و مراکز خرید</span></div>
-            <div class="feat"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><span>دید نزدیک و مستقیم مخاطب با برند شما</span></div>
-            <div class="feat"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><span>کیفیت چاپ بالا با رنگ‌های زنده و ابعاد جذاب</span></div>
-            <div class="feat"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><span>مناسب برای معرفی محصولات و کمپین‌های فروش</span></div>
-            <div class="feat"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><span>تعویض سریع و دوره‌ای پیام تبلیغاتی</span></div>
+            <div class="feat"><span class="tick"><svg><use href="#ico-tick"/></svg></span><span>قرارگیری در مسیرهای پرتردد و مراکز خرید</span></div>
+            <div class="feat"><span class="tick"><svg><use href="#ico-tick"/></svg></span><span>دید نزدیک و مستقیم مخاطب با برند شما</span></div>
+            <div class="feat"><span class="tick"><svg><use href="#ico-tick"/></svg></span><span>کیفیت چاپ بالا با رنگ‌های زنده و ابعاد جذاب</span></div>
+            <div class="feat"><span class="tick"><svg><use href="#ico-tick"/></svg></span><span>مناسب برای معرفی محصولات و کمپین‌های فروش</span></div>
+            <div class="feat"><span class="tick"><svg><use href="#ico-tick"/></svg></span><span>تعویض سریع و دوره‌ای پیام تبلیغاتی</span></div>
+            <div class="feat"><span class="tick"><svg><use href="#ico-tick"/></svg></span><span>هزینه مناسب با بازدهی بالا برای هر بودجه</span></div>
           </div>
 
           <hr class="divider">
 
           <div class="media-grid">
 
-            <!-- ══════════════════════════════════════════════════
-                 🖼 تصویر اول — استند
-                 برای قرار دادن عکس، کادر «جای تصویر» را پاک کن و به‌جایش بنویس:
-
-                 <img class="media-el" src="stand-1.jpg" alt="استند ۱">
-
-                 و به‌جای stand-1.jpg آدرس عکس خودت را بگذار.
-                 ══════════════════════════════════════════════════ -->
             <div class="media">
-              <div class="ph ph-pic">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><circle cx="9" cy="10" r="1.7"/><path d="M4.5 17l4.5-4.5 3 3 3.5-3.5 4 4"/></svg>
-                <img class="media-el" src="./media/stand1.webp" alt="استند ۱">
+              <!-- ⬇️ آدرس عکس اول استند را جای stand-1.jpg بگذار -->
+              <div class="media-box" role="button" tabindex="0" aria-label="نمایش بزرگ استند ۱">
+                <img src="./media/stand1.webp" alt="استند تبلیغاتی ۱" loading="lazy" decoding="async">
+                <span class="mb-hint"><span><svg><use href="#ico-expand"/></svg></span></span>
               </div>
               <p class="cap"><b>استند ۱</b> — نمونه کار</p>
             </div>
 
-            <!-- ══════════════════════════════════════════════════
-                 🖼 تصویر دوم — استند
-                 برای قرار دادن عکس، کادر «جای تصویر» را پاک کن و به‌جایش بنویس:
-
-                 <img class="media-el" src="stand-2.jpg" alt="استند ۲">
-                 ══════════════════════════════════════════════════ -->
             <div class="media">
-              <div class="ph ph-pic">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><circle cx="9" cy="10" r="1.7"/><path d="M4.5 17l4.5-4.5 3 3 3.5-3.5 4 4"/></svg>
-                <img class="media-el" src="./media/stand2.webp" alt="استند ۲">
+              <!-- ⬇️ آدرس عکس دوم استند را جای stand-2.jpg بگذار -->
+              <div class="media-box" role="button" tabindex="0" aria-label="نمایش بزرگ استند ۲">
+                <img src="./media/stand2.webp" alt="استند تبلیغاتی ۲" loading="lazy" decoding="async">
+                <span class="mb-hint"><span><svg><use href="#ico-expand"/></svg></span></span>
               </div>
               <p class="cap"><b>استند ۲</b> — نمونه کار</p>
             </div>
@@ -427,16 +481,14 @@
         </article>
       </section>
 
-      <!-- ═══════════════ ۳) بیلبورد ═══════════════ -->
+      <!-- ═══════════════ ۳) بیلبورد پمپ بنزین ═══════════════ -->
       <section id="billboard" class="reveal">
         <article class="glass card">
           <div class="sec-head">
-            <span class="sec-ico">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3.5" width="20" height="10.5" rx="1.5"/><path d="M8 14v6.5M16 14v6.5M5.5 20.5h13"/></svg>
-            </span>
+            <span class="sec-ico"><svg><use href="#ico-fuel"/></svg></span>
             <div>
-              <h2>بیلبورد های پمپ بنزین</h2>
-              <div class="sec-sub">غول‌پیکرترین اثر بصری شهر</div>
+              <h2>بیلبورد پمپ بنزین</h2>
+              <div class="sec-sub">پیام شما، چشم‌به‌چشم با مشتری در جایگاه سوخت‌گیری</div>
             </div>
             <span class="sec-num">۰۳</span>
           </div>
@@ -444,43 +496,41 @@
           <hr class="divider">
 
           <div class="feats">
-            <div class="feat"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><span>دیده‌شدن ۲۴ ساعته، در تمام ساعات شبانه‌روز</span></div>
-            <div class="feat"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><span>تکرار پیام و ماندگاری بالا در ذهن مخاطب</span></div>
-            <div class="feat"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><span>موقعیت‌های پرتردد ورودی شهر و بزرگراه‌ها</span></div>
-            <div class="feat"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><span>طراحی، ساخت و نصب کامل از ابتدا تا انتها</span></div>
-            <div class="feat"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span><span>نورپردازی حرفه‌ای و مقاوم در برابر شرایط جوی</span></div>
+            <div class="feat"><span class="tick"><svg><use href="#ico-tick"/></svg></span><span>مخاطب اسیر؛ در زمان سوخت‌گیری فقط پیام شما را می‌بیند</span></div>
+            <div class="feat"><span class="tick"><svg><use href="#ico-tick"/></svg></span><span>ماندگاری ۳ تا ۵ دقیقه‌ای مخاطب روبه‌روی برند شما</span></div>
+            <div class="feat"><span class="tick"><svg><use href="#ico-tick"/></svg></span><span>تردد روزانه صدها خودرو و مسافر در هر جایگاه</span></div>
+            <div class="feat"><span class="tick"><svg><use href="#ico-tick"/></svg></span><span>تکرار مداوم؛ سوخت‌گیری چندبار در هفته</span></div>
+            <div class="feat"><span class="tick"><svg><use href="#ico-tick"/></svg></span><span>دیده‌شدن ۲۴ ساعته با نورپردازی اختصاصی</span></div>
+            <div class="feat"><span class="tick"><svg><use href="#ico-tick"/></svg></span><span>نصب روی پمپ‌ها با دید نزدیک و بی‌رقیب</span></div>
+          </div>
+
+          <div class="loc-label">موقعیت‌های نصب</div>
+          <div class="locs">
+            <!-- ⬇️ نام جایگاه‌های بنزین را اینجا بنویس -->
+            <div class="loc"><svg><use href="#ico-pin"/></svg>جایگاه سوخت — نام مسیر را اینجا بنویسید</div>
+            <div class="loc"><svg><use href="#ico-pin"/></svg>جایگاه سوخت — نام مسیر را اینجا بنویسید</div>
           </div>
 
           <hr class="divider">
 
           <div class="media-grid">
 
-            <!-- ══════════════════════════════════════════════════
-                 🖼 تصویر اول — بیلبورد
-                 برای قرار دادن عکس، کادر «جای تصویر» را پاک کن و به‌جایش بنویس:
-
-                 <img class="media-el" src="billboard-1.jpg" alt="بیلبورد ۱">
-                 ══════════════════════════════════════════════════ -->
             <div class="media">
-              <div class="ph ph-pic">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><circle cx="9" cy="10" r="1.7"/><path d="M4.5 17l4.5-4.5 3 3 3.5-3.5 4 4"/></svg>
-                <img class="media-el" src="./media/pomp1.webp" alt="بیلبورد ۱">
+              <!-- ⬇️ آدرس عکس اول بیلبورد پمپ بنزین را جای pump-1.jpg بگذار -->
+              <div class="media-box" role="button" tabindex="0" aria-label="نمایش بزرگ بیلبورد پمپ بنزین ۱">
+                <img src="./media/pomp1.webp" alt="بیلبورد پمپ بنزین ۱" loading="lazy" decoding="async">
+                <span class="mb-hint"><span><svg><use href="#ico-expand"/></svg></span></span>
               </div>
-              <p class="cap"><b>بیلبورد ۱</b> — نمونه کار</p>
+              <p class="cap"><b>بیلبورد ۱</b> — پمپ بنزین</p>
             </div>
 
-            <!-- ══════════════════════════════════════════════════
-                 🖼 تصویر دوم — بیلبورد
-                 برای قرار دادن عکس، کادر «جای تصویر» را پاک کن و به‌جایش بنویس:
-
-                 <img class="media-el" src="billboard-2.jpg" alt="بیلبورد ۲">
-                 ══════════════════════════════════════════════════ -->
             <div class="media">
-              <div class="ph ph-pic">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><circle cx="9" cy="10" r="1.7"/><path d="M4.5 17l4.5-4.5 3 3 3.5-3.5 4 4"/></svg>
-                <img class="media-el" src="./media/pomp2.webp" alt="بیلبورد 2">
+              <!-- ⬇️ آدرس عکس دوم بیلبورد پمپ بنزین را جای pump-2.jpg بگذار -->
+              <div class="media-box" role="button" tabindex="0" aria-label="نمایش بزرگ بیلبورد پمپ بنزین ۲">
+                <img src="./media/pomp2.webp" alt="بیلبورد پمپ بنزین ۲" loading="lazy" decoding="async">
+                <span class="mb-hint"><span><svg><use href="#ico-expand"/></svg></span></span>
               </div>
-              <p class="cap"><b>بیلبورد ۲</b> — نمونه کار</p>
+              <p class="cap"><b>بیلبورد ۲</b> — پمپ بنزین</p>
             </div>
 
           </div>
@@ -492,11 +542,20 @@
         <div class="glass cta-box">
           <h3>برندتان را در <span class="grad">قلب شهر</span> بدرخشانید</h3>
           <p>برای مشاوره رایگان و رزرو فضای تبلیغاتی، همین حالا با کارشناسان پردیسان در تماس باشید.</p>
-          <!-- ⚠️ شماره تماس واقعی را در href و متن جایگزین کن -->
-          <a class="btn btn-primary" href="tel:09120000000">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>
-            شروع همکاری
-          </a>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="tel:09351784042">
+              <svg><use href="#ico-phone"/></svg>
+              ۰۹۳۵ ۱۷۸ ۴۰۴۲
+            </a>
+            <a class="btn btn-glass btn-wa" href="https://wa.me/989351784042" target="_blank" rel="noopener">
+              <svg><use href="#ico-wa"/></svg>
+              واتساپ
+            </a>
+            <a class="btn btn-glass btn-ig" href="https://instagram.com/pardisan.ads" target="_blank" rel="noopener">
+              <svg><use href="#ico-ig"/></svg>
+              <span dir="ltr">pardisan.ads</span>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -507,24 +566,46 @@
       <div class="glass foot reveal">
         <img src="https://z-cdn-media.chatglm.cn/files/958f8ed3-fe2c-41bc-8f11-41b59d71db12.JPG?auth_key=1889030475-e28c03a0e34b48eb8f5c76b9283f1fbc-0-8f8aa2d2e2c81a0ef8da5098bad74bb4" alt="لوگوی پردیسان" onerror="this.style.display='none'">
         <div><b>پردیسان</b> | تخصص در تبلیغات محیطی</div>
-        <!-- ⚠️ شماره تماس و آدرس اینستاگرام را اینجا جایگزین کن -->
-        <div class="fc">تماس: <a href="tel:09120000000">۰۹۱۲ ××× ××××</a> · اینستاگرام: <a href="#" rel="noopener">@pardisan</a></div>
+        <div class="fc">
+          تماس: <a href="tel:09351784042">۰۹۳۵ ۱۷۸ ۴۰۴۲</a>
+          · واتساپ: <a href="https://wa.me/989351784042" target="_blank" rel="noopener">ارسال پیام</a>
+          · اینستاگرام: <a href="https://instagram.com/pardisan.ads" target="_blank" rel="noopener" dir="ltr">@pardisan.ads</a>
+        </div>
         <div class="tiny">© <span id="year">۱۴۰۴</span> پردیسان — تمامی حقوق محفوظ است.</div>
       </div>
     </footer>
 
   </div>
 
+  <!-- دکمه‌های شناور واتساپ و اینستاگرام -->
+  <div class="fabs">
+    <a class="fab fab-wa" href="https://wa.me/989351784042" target="_blank" rel="noopener" aria-label="واتساپ">
+      <svg><use href="#ico-wa"/></svg>
+      <span class="fab-tip">واتساپ</span>
+    </a>
+    <a class="fab fab-ig" href="https://instagram.com/pardisan.ads" target="_blank" rel="noopener" aria-label="اینستاگرام">
+      <svg><use href="#ico-ig"/></svg>
+      <span class="fab-tip">اینستاگرام</span>
+    </a>
+  </div>
+
+  <!-- لایت‌باکس: نمایش شناور ویدیو/عکس -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="نمایش بزرگ رسانه">
+    <div class="lb-body">
+      <button class="lb-close" id="lbClose" aria-label="بستن"><svg><use href="#ico-x"/></svg></button>
+      <div class="lb-media" id="lb-media"></div>
+      <p class="lb-cap" id="lb-cap"></p>
+    </div>
+  </div>
+
   <script>
     // نمایش نرم بخش‌ها هنگام اسکرول
     const io = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); }
-      });
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); } });
     }, { threshold: .1 });
     document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-    // هاله‌ی نور شیشه‌ای که همراه موس حرکت می‌کند (افکت لیکویید گلس)
+    // هاله‌ی نور شیشه‌ای همراه حرکت موس
     document.querySelectorAll('.glass').forEach(el => {
       el.addEventListener('pointermove', e => {
         const r = el.getBoundingClientRect();
@@ -532,6 +613,52 @@
         el.style.setProperty('--y', (e.clientY - r.top) + 'px');
       });
     });
+
+    // ═══ لایت‌باکس سبک (بدون کتابخانه) ═══
+    const lb = document.getElementById('lightbox');
+    const lbMedia = document.getElementById('lb-media');
+    const lbCap = document.getElementById('lb-cap');
+
+    function openLB(box){
+      const src = box.querySelector('img, video');
+      if (!src) return;
+      const el = src.cloneNode(true);
+      if (el.tagName === 'VIDEO') {
+        el.controls = true;
+        el.muted = false;
+        el.removeAttribute('muted');
+        el.setAttribute('playsinline', '');
+        el.setAttribute('autoplay', '');
+      }
+      lbMedia.innerHTML = '';
+      lbMedia.appendChild(el);
+      const cap = box.closest('.media') && box.closest('.media').querySelector('.cap');
+      lbCap.innerHTML = cap ? cap.innerHTML : '';
+      lb.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      document.body.classList.add('lb-open');
+      if (el.tagName === 'VIDEO') { const p = el.play(); if (p && p.catch) p.catch(() => {}); }
+    }
+    function closeLB(){
+      lb.classList.remove('open');
+      const v = lbMedia.querySelector('video');
+      if (v) v.pause();
+      lbMedia.innerHTML = '';
+      lbCap.innerHTML = '';
+      document.body.style.overflow = '';
+      document.body.classList.remove('lb-open');
+    }
+
+    document.querySelectorAll('.media-box').forEach(box => {
+      box.addEventListener('click', () => openLB(box));
+      box.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLB(box); }
+      });
+    });
+    document.getElementById('lbClose').addEventListener('click', closeLB);
+    // کلیک روی پس‌زمینه = بستن (کلیک روی خود ویدیو/عکس بسته نمی‌شود)
+    lb.addEventListener('click', e => { if (!e.target.closest('.lb-media')) closeLB(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLB(); });
 
     // سال شمسی خودکار در فوتر
     document.getElementById('year').textContent =
